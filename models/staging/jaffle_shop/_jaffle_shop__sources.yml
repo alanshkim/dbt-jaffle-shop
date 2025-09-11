@@ -4,8 +4,10 @@ sources:
   - name: jaffle_shop
     database: raw
     schema: jaffle_shop
+    description: Sample e-commerce data.
     tables:
       - name: customers 
+        description: Raw customer data.
         columns:
           - name: id
             data_tests:
@@ -13,6 +15,7 @@ sources:
               - not_null
 
       - name: orders
+        description: Raw orders data.
         columns:
           - name: id
             data_tests:
