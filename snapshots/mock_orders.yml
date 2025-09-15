@@ -2,7 +2,6 @@ snapshots:
   - name: orders_snapshot
     relation: source('jaffle_shop', 'orders')
     config:
-      schema: dbt_akim
       database: raw
       unique_key: id
       strategy: check
